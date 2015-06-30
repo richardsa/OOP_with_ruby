@@ -4,7 +4,7 @@ class Mastermind
   #initialize variables
   def initialize
     @solution = (1..6).to_a.shuffle
-    @turns_left = 10
+    @turns_left = 12
     @winner = false
   end
   
@@ -26,7 +26,7 @@ class Mastermind
     puts "You must try to guess the computer's 4 digit combination."
     puts "The 4 digit combination consists of 4 number between 1 and 6."
     puts "The number's do not repeat."
-    puts "You have 10 tries!"
+    puts "You have #{@turns_left} tries!"
     puts "Can you succeed?"
     puts "But if you are feeling brave, you can challenge the computer to guess your combination."
     puts "Enter 1 if you would like to guess or enter 2 if you would like for the computer to guess:"
